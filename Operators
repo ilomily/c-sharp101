@@ -57,3 +57,4 @@ Console.WriteLine(sonuc1);
 Console.WriteLine("**** % mod alma****");
 int sonuc2 = 20%3;
 Console.WriteLine(sonuc2);
+//patika.dev
