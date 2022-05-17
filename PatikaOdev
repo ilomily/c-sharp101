@@ -1,0 +1,74 @@
+Console.WriteLine("****1. Soru****");
+Console.WriteLine("Lütfen pozitif bir sayı giriniz: ");
+int n = int.Parse(Console.ReadLine());
+int[] dizi = new int [n];
+
+Console.WriteLine(n + " adet pozitif sayı giriniz:");
+
+for (int i = 0; i < n; i++)
+{
+    Console.Write("{0}. elemanı giriniz: ", i+1);
+    dizi[i] = int.Parse(Console.ReadLine());
+}
+foreach (int sayi in dizi)
+{
+    if(sayi%2 == 0 )
+    {
+        Console.WriteLine(sayi);
+    }
+}
+
+
+Console.WriteLine("****2. Soru****");
+
+Console.WriteLine("İki pozitif tam sayı giriniz:");
+
+Console.Write("1. sayı: ");
+int k = int.Parse(Console.ReadLine());
+
+Console.Write("2. sayı: ");
+int m = int.Parse(Console.ReadLine());
+
+Console.WriteLine(k + " adet pozitif tam sayı giriniz:");
+int[] dizi1 = new int[k]; 
+for (int i = 0; i < k; i++)
+{
+    Console.Write("{0}. sayıyı giriniz: ", i+1);
+    dizi1[i] = int.Parse(Console.ReadLine());
+}
+foreach (int sayi1 in dizi1)
+{
+    if(sayi1 == m || sayi1%m==0)
+    Console.WriteLine(sayi1);
+}
+
+
+Console.WriteLine("****3. Soru****");
+Console.WriteLine("Pozitif bir tam sayı giriniz: ");
+int kelimeSayısı = int.Parse(Console.ReadLine());
+Console.WriteLine(kelimeSayısı + " adet kelime giriniz: ");
+string[] kelimeler = new string [kelimeSayısı];
+for (int i = 0; i < kelimeSayısı; i++)
+{
+    Console.WriteLine("{0}. kelimeyi giriniz: ", i+1);
+    kelimeler[i]=Console.ReadLine();
+}
+
+Console.WriteLine("Ters sıralaması: ");
+Array.Reverse(kelimeler);
+foreach (string kelime in kelimeler)
+{
+    Console.WriteLine(kelime);
+}
+
+Console.WriteLine("****4. Soru****");
+Console.WriteLine("Bir cümle yazınız: ");
+string cumle = Console.ReadLine();
+
+cumle.ToCharArray();
+Console.WriteLine("Harf sayısı: " + cumle.Length);
+
+string[] wordCount = cumle.Split(" ");
+Console.WriteLine("Kelime sayısı: " + wordCount.Length);    
+
+//patika.dev
