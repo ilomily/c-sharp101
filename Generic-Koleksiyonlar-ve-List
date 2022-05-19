@@ -93,11 +93,9 @@ public class Kullanıcılar
 {
     string isim;
     string soyisim;
-    string yas;
+    int yas;
 
     public string Isim { get => isim; set => isim = value; }
     public string Soyisim { get => soyisim; set => soyisim = value; }
-    public string Yas { get => yas; set => yas = value; }
+    public int Yas { get => yas; set => yas = value; }
 }
-
-//patika.dev
