@@ -1,0 +1,63 @@
+using System.Collections;
+using System.Collections.Generic;
+
+//system.Collections namespace
+ArrayList liste = new ArrayList();
+// liste.Add("Ayse");
+// liste.Add(23);
+// liste.Add(true);
+// liste.Add('L');
+
+//içerisinde verilere erişim
+
+// Console.WriteLine(liste[2]);
+// 
+// foreach (var item in liste)
+// {
+//     Console.WriteLine(item);
+// }
+
+//AddRanger
+Console.WriteLine("****AddRange****");
+//string[] renkler ={"mavi", "yesil", "mor", "kirmizi"};
+List<int> sayilar = new List<int>(){34, 43, 36, 32};
+//liste.AddRange(renkler);
+liste.AddRange(sayilar);
+
+foreach (var item in liste)
+{
+    Console.WriteLine(item);
+}
+
+//sort
+Console.WriteLine("****Sort****");
+liste.Sort();
+
+foreach (var item in liste)
+{
+    Console.WriteLine(item);
+}
+
+//Binary Search
+Console.WriteLine("****Binary Search****");
+Console.WriteLine(liste.BinarySearch(43));
+
+//Reverse
+Console.WriteLine("****Reverse****");
+liste.Reverse();
+
+foreach (var item in liste)
+{
+    Console.WriteLine(item);
+}
+
+//clear
+Console.WriteLine("****Clear****");
+liste.Clear();
+
+foreach (var item in liste)
+{
+    Console.WriteLine(item);   
+}
+
+//patika.dev
